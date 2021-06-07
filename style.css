@@ -1,0 +1,154 @@
+/* GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  padding-top: 15px;
+  flex-direction: column;
+  border-bottom: 1px solid #CECECE;
+}
+
+/* HEADER-TOP */
+header .header-top {
+  display: flex;
+  height: 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header-top .logo {
+  display: flex;
+  padding-left: 10px;
+  align-items: center;
+}
+header .header-top .logo img {
+  width: 100px;
+  height: 35px;
+}
+header .header-top .logo h1 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #5F6367;
+}
+header .header-top .user-console {
+  padding-right: 20px;
+}
+header .header-top .user-console i {
+  font-size: 26px;
+  margin-left: 10px;
+  color: #5F6367;
+  padding: 5px;
+  cursor: pointer;
+}
+header .header-top .user-console i:hover {
+  border-radius: 100%;
+  background-color: #C8C8C8;
+}
+
+/* NAV */
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  height: 100%;
+  padding: 15px 0;
+  margin: 0 20px;
+}
+header nav ul li a {
+  color: #5F6367;
+}
+header nav ul li.active {
+  border-bottom: 3px solid #3367D6;
+}
+header nav ul li.active a {
+  color: #3367D6;
+}
+
+/* WRAPPER */
+.wrapper {
+  padding: 20px 15%;
+  margin-bottom: 30px;
+}
+.wrapper h2, .wrapper h3 {
+  margin-top: 60px;
+  color: #3C4043;
+}
+.wrapper p {
+  margin-top: 20px;
+  line-height: 180%;
+}
+
+/* PHP LIST */
+ol {
+  list-style-position:inside;
+}
+ol.inner {
+  margin-left: 50px;
+  list-style: lower-latin;
+}
+ol li,
+ol li span,
+.wrapper p {
+  font-size: 14px;
+  color: #212121;
+  opacity: .9;
+}
+ol li span {
+  margin-left: 20px;
+  line-height: 180%;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  padding: 0 15%;
+  background-color: #F5F5F5;
+}
+footer ul {
+  display: flex;
+  align-items: center;
+}
+footer ul li {
+  margin-right: 15px;
+  position: relative;
+}
+footer ul li:not(:first-child)::before {
+  position: absolute;
+  top: 60%;
+  left: -7px;
+  content: '';
+  width: 1px;
+  height: 1px;
+  background-color: #626262;
+}
+footer ul li a {
+  color: #626262;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+footer .lang-select {
+  display: flex;
+  align-items: center;
+}
+footer .lang-select i {
+  font-size: 18px;
+  color: #30A2F7;
+}
+footer .lang-select select {
+  width: 180px;
+  margin-left: 10px;
+}
